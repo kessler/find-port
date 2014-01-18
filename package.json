@@ -1,0 +1,28 @@
+{
+  "name": "find-port",
+  "version": "0.0.1",
+  "description": "finds an open port",
+  "main": "lib/findPorts.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kessler/node-find-port"
+  },
+  "keywords": [
+    "port",
+    "scanner",
+    "portscanner",
+    "net",
+    "tcp"
+  ],
+  "author": "Yaniv Kessler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kessler/node-find-port/issues"
+  },
+  "dependencies": {
+    "async": "~0.2.9"
+  }
+}
