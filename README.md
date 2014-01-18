@@ -1,6 +1,6 @@
 # find-port [![Build Status](https://secure.travis-ci.org/kessler/find-port.png?branch=master)](http://travis-ci.org/kessler/find-port)
 
-finds an open port
+find an unused port in your localhost
 
 ```js
 	var findPort = require('find-port')
