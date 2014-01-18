@@ -1,7 +1,7 @@
 {
   "name": "find-port",
   "version": "0.0.1",
-  "description": "finds an open port",
+  "description": "find an unused port in your localhost",
   "main": "lib/findPorts.js",
   "scripts": {
     "test": "mocha"
