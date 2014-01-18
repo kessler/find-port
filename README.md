@@ -1,4 +1,4 @@
-# find-port
+# find-port [![Build Status](https://secure.travis-ci.org/kessler/find-port.png?branch=master)](http://travis-ci.org/kessler/find-port)
 
 finds an open port
 
