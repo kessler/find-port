@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kessler/node-find-port"
+    "url": "https://github.com/kessler/find-port"
   },
   "keywords": [
     "port",
@@ -20,9 +20,12 @@
   "author": "Yaniv Kessler",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kessler/node-find-port/issues"
+    "url": "https://github.com/kessler/find-port/issues"
   },
   "dependencies": {
     "async": "~0.2.9"
+  },
+  "devDependencies": {
+    "mocha": "~1.17.0"
   }
 }
