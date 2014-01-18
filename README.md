@@ -1,5 +1,7 @@
 # find-port
 
+finds an open port
+
 ```js
 	var findPort = require('find-port')
 
