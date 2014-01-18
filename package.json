@@ -1,6 +1,6 @@
 {
   "name": "find-port",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "find an unused port in your localhost",
   "main": "lib/findPort.js",
   "scripts": {
