@@ -34,7 +34,6 @@ describe('findPort', function () {
 
 	it('finds unused ports in a range', function (done) {
 
-
 		findPort(9000, 9003, function(ports) {
 			assert.deepEqual(ports, [9001, 9002, 9003])
 			done()
