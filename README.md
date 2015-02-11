@@ -1,5 +1,8 @@
 # find-port [![Build Status](https://secure.travis-ci.org/kessler/find-port.png?branch=master)](http://travis-ci.org/kessler/find-port)
 
+[![NPM](https://nodei.co/npm/find-port.png)](https://nodei.co/npm/find-port/)
+[![NPM](https://nodei.co/npm-dl/find-port.png)](https://nodei.co/npm/find-port/)
+
 find an unused port in your localhost
 
 ```js
