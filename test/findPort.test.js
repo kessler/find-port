@@ -63,7 +63,7 @@ describe('findPort', function () {
     it('find single unused port in a range', function (done) {
 
         findPort(9000, 9003, true, function(port) {
-            assert.equal(port, 9001)
+            assert(port == 9001 || port == 9002 || port == 9003)
             done()
         })
     })
@@ -89,6 +89,15 @@ describe('findPort', function () {
 
         findPort([9000, 9003], true, function(port) {
             assert.equal(port, 9003)
+            done()
+        })
+
+    })
+
+    it('finds single unused port in a big range ', function (done) {
+
+        findPort(9000, 19000, true, function(port) {
+            assert(port >= 9000 && port <= 19000);
             done()
         })
 
