@@ -17,4 +17,15 @@ find an unused port in your localhost
 	findPort([8000, 8011], function(ports) {
 		console.log(ports)
 	})
+
+	// find first free port in a range
+	findPort(8000, 8003, true, function(port) {
+    	console.log(port)
+    })
+
+    // find first free port in array
+    findPort([8000, 8011], true, function(port) {
+        console.log(port)
+    })
+
 ```
