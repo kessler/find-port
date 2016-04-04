@@ -13,7 +13,7 @@ describe('findPort', function () {
 
 		server.on('listening', done)
 
-		server.listen(9000)
+		server.listen({ host: '127.0.0.1', port: 9000})
 	})
 
 	afterEach(function() {
@@ -22,19 +22,19 @@ describe('findPort', function () {
 
 	it('throws an error if callback is missing with one argument', function () {
 		assert.throws(function () {
-			findPort(9000)
+			findPort('127.0.0.1', 9000)
 		})
 	})
 
 	it('throws an error if callback is missing with two arguments', function () {
 		assert.throws(function () {
-			findPort(9000, 9002)
+			findPort('127.0.0.1', 9000, 9002)
 		})
 	})
 
 	it('finds unused ports in a range', function (done) {
 
-		findPort(9000, 9003, function(ports) {
+		findPort('127.0.0.1', 9000, 9003, function(ports) {
 			assert.deepEqual(ports, [9001, 9002, 9003])
 			done()
 		})
@@ -42,7 +42,7 @@ describe('findPort', function () {
 
 	it('finds unused ports in an array', function (done) {
 
-		findPort([9000, 9003], function(ports) {
+		findPort('127.0.0.1', [9000, 9003], function(ports) {
 			assert.deepEqual(ports, [9003])
 			done()
 		})
