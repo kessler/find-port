@@ -13,7 +13,7 @@ describe('findPort', function () {
 
 		server.on('listening', done)
 
-		server.listen({ host: '127.0.0.1', port: 9000})
+		server.listen(9000, '127.0.0.1')
 	})
 
 	afterEach(function() {
