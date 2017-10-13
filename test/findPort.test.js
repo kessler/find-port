@@ -47,4 +47,11 @@ describe('findPort', function () {
 			done()
 		})
 	})
+
+	it('finds an unused port', function (done) {
+		findPort('127.0.0.1', function(port) {
+			assert.equal(port.length, 1);
+			done();
+		})
+	})
 })
