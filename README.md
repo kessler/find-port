@@ -17,6 +17,11 @@ find an unused port in your localhost
 	findPort('127.0.0.1', [8000, 8011], function(ports) {
 		console.log(ports)
 	})
+
+	// find one unused port at random
+	findPort('127.0.0.1', function(ports) {
+		console.log(ports)
+	})
 ```
 
 - Since version 2.0.0 a local interface must be specified
