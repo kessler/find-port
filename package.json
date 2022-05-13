@@ -4,7 +4,7 @@
   "description": "find an unused port in your localhost",
   "main": "lib/findPort.js",
   "scripts": {
-    "test": "mocha"
+    "test": "npx mocha"
   },
   "repository": {
     "type": "git",
@@ -23,9 +23,9 @@
     "url": "https://github.com/kessler/find-port/issues"
   },
   "dependencies": {
-    "async": "~0.2.9"
+    "async": "^3.2.3"
   },
   "devDependencies": {
-    "mocha": "~1.17.0"
+    "mocha": "^10.0.0"
   }
 }

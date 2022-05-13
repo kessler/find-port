@@ -34,7 +34,8 @@ describe('findPort', function () {
 
 	it('finds unused ports in a range', function (done) {
 
-		findPort('127.0.0.1', 9000, 9003, function(ports) {
+		findPort('127.0.0.1', 9000, 9003, function(err, ports) {
+			if (err) return done(err)
 			assert.deepEqual(ports, [9001, 9002, 9003])
 			done()
 		})
@@ -42,7 +43,8 @@ describe('findPort', function () {
 
 	it('finds unused ports in an array', function (done) {
 
-		findPort('127.0.0.1', [9000, 9003], function(ports) {
+		findPort('127.0.0.1', [9000, 9003], function(err, ports) {
+			if (err) return done(err)
 			assert.deepEqual(ports, [9003])
 			done()
 		})
